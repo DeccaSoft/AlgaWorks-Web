@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- O Normalize Deve SEMPRE ser colocado Antes do seu arquivo de Estilos -->
+    <!-- Nào usaremos mais o normalize porque o bootstrap já tem o próprio normailize-->
+    <!--
+    <link rel="stylesheet" href="css/normalize.css">
+    -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base.css" type="text/css">
+    <link rel="stylesheet" href="css/layout.css" type="text/css">
+    <link rel="stylesheet" href="css/componentes.css" type="text/css">
+    <title>MyPilas</title>
+</head>
+
+<body>
+
+    <header class="layout-cabecalho layout-cabecalho--home">
+        <div class="container">
+            <nav class="navegacao">
+                <img src="img/logo.png" width="100" height="35" alt="Logo MyPilas">
+                <div class="navegacao__menu">
+                    <button class="botao-chaveador  js-botao-chaveador"></button>
+                    <ul class="menu  js-menu">
+                        <li class="menu__item">
+                            <a href="#">Como Funciona</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#planos">Planos e Preços</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#">Contato</a>
+                        </li>
+                        <li class="menu__item  menu__item--botao">
+                            <a href="#" class="botao botao--login">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- O Ideal é sections tenham sempre um h1, h2, h3... -->
+    <section class="layout-chamada"> 
+        <div class="container">
+            <div class="chamada">
+                <h1 class="chamada__titulo">As Finanças da sua Empresa em Ordem</h1>
+                <p class="chamada__subtitulo">Software de Gestão Simples e Prático para Pequenos Negócios</p>
+                <div class="chamada__acao">
+                    <a href="#planos" class="botao  botao--principal">Conheça os Planos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="layout-depoimento">
+        <div class="container">
+            <div class="depoimento">
+                <blockquote>
+                    Eu tinha perdido totalmente o controle da minha Empresa.
+                    Depois que comecei a usar o MyPilas, me sinto muito mais organizado e confiante no futuro.
+                </blockquote>
+                <div class="depoimento__autor">
+                    <img src="img/joao-da-silva.jpg" alt="João da Silva" width="180" height="180">
+                    <p>João da Silva</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="planos" class="layout-planos">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-4">
+                    <article class="plano">
+                        <h2 class="plano__cabecalho">Autônomo</h2>
+                        <div class="plano__preco">R$59/mês</div>
+                        <ul class="plano__caracteristicas">
+                            <li>Até <strong>2 usuários</strong></li>
+                            <li><strong>500MB</strong> de Armazenamento</li>
+                            <li>Lançamentos Ilimitados</li>
+                            <li>Acesso Seguro</li>
+                            <li>Sem Fidelidade</li>
+                        </ul>
+                        <footer class="plano__rodape">
+                            <a href="assine.html" class="botao  botao--assinar">Assinar</a>
+                        </footer>
+                    </article>
+                </div>
+
+                <div class="col-sm-4">
+                    <article class="plano plano--mais--popular">
+                        <h2 class="plano__cabecalho">Micro</h2>
+                        <div class="plano__preco">R$89/mês</div>
+                        <ul class="plano__caracteristicas">
+                            <li>Até <strong>5 usuários</strong></li>
+                            <li><strong>1GB</strong> de Armazenamento</li>
+                            <li>Lançamentos Ilimitados</li>
+                            <li>Acesso Seguro</li>
+                            <li>Sem Fidelidade</li>
+                        </ul>
+                        <footer class="plano__rodape">
+                            <a href="assine.html" class="botao  botao--assinar">Assinar</a>
+                        </footer>
+                    </article>
+                </div>
+
+                <div class="col-sm-4 ultima-coluna">
+                    <article class="plano">
+                        <h2 class="plano__cabecalho">Pequena</h2>
+                        <div class="plano__preco">R$99/mês</div>
+                        <ul class="plano__caracteristicas">
+                            <li>Até <strong>10 usuários</strong></li>
+                            <li><strong>5GB</strong> de Armazenamento</li>
+                            <li>Lançamentos Ilimitados</li>
+                            <li>Acesso Seguro</li>
+                            <li>Sem Fidelidade</li>
+                        </ul>
+                        <footer class="plano__rodape">
+                            <a href="assine.html" class="botao  botao--assinar">Assinar</a>
+                        </footer>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <footer class="layout-rodape">
+        <div class="container">
+            <p>&copy; MyPilas. Todos os Direitos Reservados.</p>
+        </div>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>

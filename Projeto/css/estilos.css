@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box; /*As propriedades de largura (width) e de altura (height) incluem o tamanho padding size e a propriedade border, mas não incluem a propriedade margin.*/
+
+    /*Nem precisaria mais, pois já tem no Normalize.css*/
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+header{
+    height: 60px;
+    border-bottom: 1px solid #ccc;
+}
+
+header img {
+    margin-top: 12px;
+}
+
+/* ... */
+
+#planos{
+    padding: 80px 0;
+}
+
+/* Aqui não precisa mais, pois estamos utilizando o sistema de grid do bootstrap...
+
+#planos::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+*/
+
+article{
+    padding: 10px;
+    border: 1px solid #95a4a5;
+    /* Mobile First */
+    /* Algumas regras foram tiradas daqui e postas no @media */
+}
+
+article > h2{
+    background-color: #95a4a5;
+    color: #fff;
+    text-align: center;
+    line-height: 2.5; /* Altura da Linha iguala 2,5 vezes o Tamanho de Fonte */
+    margin: -10px;
+    margin-bottom: 0;
+    font-weight: normal;
+    font-size: 28px;
+}
+
+article > div{
+    text-align: center;
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+article > ul{
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+article > ul > li{
+    text-align: center;
+}
+
+article > footer{
+    text-align: center;
+}
+
+.botao{
+    display: inline-block;
+    background-color: #127d00;
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+.botao:hover, .botao:focus{
+    background-color: #0e6400;
+}

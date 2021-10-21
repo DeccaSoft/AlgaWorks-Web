@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- div.panel.panel-default>.panel-heading{Cálculo valor total}+.panel-body -->
+    <div class="panel panel-default">
+        <div class="panel-heading">Cálculo valor total</div>
+        <div class="panel-body">
+            <!-- .row>.col-xs-3>.form-group -->
+            <div class="row">
+                <div class="col-xs-3">
+                    <div class="form-group">
+                        <!-- label{Valor}+input.form-control#valor -->
+                        <label for="">Valor</label>
+                        <input type="text" class="form-control" id="valor">
+                    </div>
+                </div>
+                <!-- .col-xs-3>.form-group -->
+                <div class="col-xs-3">
+                    <div class="form-group">
+                        <!-- label{Valor Total}+p.form-control-static#total{0} -->
+                        <label for="">Valor Total</label>
+                        <p class="form-control-static" id="total">0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ul#nav>li.item$*4>a{Item $} -->
+    <ul id="nav">
+        <li class="item1"><a href="">Item 1</a></li>
+        <li class="item2"><a href="">Item 2</a></li>
+        <li class="item3"><a href="">Item 3</a></li>
+        <li class="item4"><a href="">Item 4</a></li>
+    </ul>
+
+    <!-- section.wraper#root>div.contant>p.text{some text}+ul.list>li.list_item*3{with text} -->
+    <section class="wraper" id="root">
+        <div class="contant">
+            <p class="text">Some text</p>
+            <ul class="list">
+                <li class="list_item">with text</li>
+                <li class="list_item">with text</li>
+                <li class="list_item">with text</li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="total.js"></script>
+</body>
+</html>

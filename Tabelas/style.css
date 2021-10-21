@@ -1,0 +1,29 @@
+body{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tabela{
+    width: 100%;
+    /* border-collapse: collapse; */
+}
+
+.tabela td, .tabela th {
+    padding: 15px 10px;
+    border: 1px solid rgb(43, 42, 42);
+}
+
+.tabela th{
+    background-color: #424040;
+    color: white;
+
+    font-size: 1.1em;
+}
+
+.tabela tr:nth-child(even){ /*Linhas Pares */
+    background-color: #ececec;
+}
+
+.tabela tr:hover{
+    background-color: #faffcc;
+}

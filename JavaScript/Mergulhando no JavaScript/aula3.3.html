@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var age = 21
+        console.log(age)
+        console.log(test)
+        if(age>18){
+            var test = 35
+            console.log(test)
+        }
+        console.log(test)
+
+        var me ={
+            name: 'André',
+            greet: function(){      //poderia ser greet(){...}
+                console.log(this)
+            }
+        }
+        me.idade = 45;
+        me.greet();
+
+        //function.call e .apply
+
+        function sum(a=0, b=0){ //Valores Padrão
+            console.log(this)
+            console.log(arguments, arguments[0], arguments[1])
+            return (a + b)
+        }
+
+        const me2 = {name: 'José'}
+        sum.call(me2, 3, 5)
+        sum.apply(me2, [3, 5])
+
+        // Arrow Functions
+
+        const getRemainingYears = (age) => {
+            return 18 - age
+        }
+        //Neste caso específico de apenas uma instrução, poderia ficar assim: const getRemainingYears = (age) => 18 - age
+
+        console.log(getRemainingYears(15))
+
+        //Arrow Functions NÃO possuem contexto this próprio
+
+        const me3 = {
+            name: "André",
+            age: 45,
+            greet: () => {
+                console.log(this)
+            }
+        }
+
+        me3.greet();
+
+        
+    </script>
+</body>
+</html>

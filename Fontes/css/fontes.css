@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo */
+.artigo{
+    width: 1280px;
+    padding: 40px;
+    background-color: beige;
+    margin: 409x auto;
+    text-align: center;
+}
+
+.artigo h1{
+    color: #069;
+    font-size: 23px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: bolder;
+    font-variant: small-caps; /* tudo maiúsculo, porém com tamnhos diferentes */
+}
+
+.artigo p{
+    color: #555558;
+    text-align: justify;
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    line-height: 40px;
+    margin-top: 12px;
+}

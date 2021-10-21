@@ -1,0 +1,7 @@
+setTimeout(() => {
+    console.log('Executou após 2 segundos')
+}, 2000);
+
+setInterval(() => {
+    console.log('Executando de 1 em 1 segundos')
+}, 1000);
